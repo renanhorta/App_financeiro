@@ -13,7 +13,7 @@ export default function Header({name}){
     return(
         <View style={styles.container}>
             <View style={styles.content}>
-                <View style={styles.menu}>
+                {/* <View style={styles.menu}>
                 <TouchableOpacity activeOpacity={0.9} style={styles.buttonUser}>
                 <Feather name="menu" size={27} color="#FFF" style={{ margin: 0, padding: 0 }} />
                 </TouchableOpacity>
@@ -23,7 +23,11 @@ export default function Header({name}){
                 onPress={()=>{}}
                 title="Transações"
                 color="#841584"
-                />
+                /> */}
+                <Text style={styles.username}>Olá, {name}</Text>
+                <TouchableOpacity activeOpacity={0.9} style={styles.buttonUser}>
+                <Feather name="menu" size={27} color="#FFF" style={{ margin: 0, padding: 0 }} />
+                </TouchableOpacity>
             </View>
         </View>
     )
